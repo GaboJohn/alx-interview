@@ -15,7 +15,8 @@ def island_perimeter(grid):
     Returns:
         int: The perimeter of the island.
     """
-    if not isinstance(grid, list) or not all(isinstance(row, list) for row in grid):
+    if not isinstance(grid, list) or not all(
+            isinstance(row, list) for row in grid):
         return 0
 
     perimeter = 0
